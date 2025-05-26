@@ -28,7 +28,7 @@ COPY src/ /app/src
 VOLUME /app/documents
 
 # 진입점
-#ENTRYPOINT ["python", "src/main.py"]
+ENTRYPOINT ["python", "src/main.py"]
 
-#배포시에는 mcp dev 사용
-CMD ["mcp-inspector", "--", "python", "src/main.py"]
+#배포시에는 진입점 사용
+#CMD ["mcp-inspector", "--", "python", "src/main.py"]
