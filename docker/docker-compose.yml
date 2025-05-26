@@ -1,0 +1,10 @@
+services:
+  read_the_docs:
+    build: .
+    volumes:
+      - documents:/app/documents
+    stdin_open: false
+    tty: false
+
+volumes:
+  documents:

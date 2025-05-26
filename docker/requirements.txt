@@ -1,0 +1,3 @@
+playwright==1.52.0
+llama-index==0.12.37
+mcp[cli]==1.9.1
