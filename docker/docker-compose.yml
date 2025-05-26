@@ -1,10 +1,13 @@
 services:
   read_the_docs:
     build: .
+    image: mcp/read_the_docs
     volumes:
       - documents:/app/documents
-    stdin_open: false
-    tty: false
+    ports:
+      - "6274:6274"
+      - "6277:6277"
+    
 
 volumes:
   documents:
